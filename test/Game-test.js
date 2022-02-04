@@ -46,8 +46,7 @@ describe('Game', function() {
   })
 
   it(`Should keep track of the current round`, function() {
-    game.createCards()
-    game.createDeck()
+
     game.start()
 
     expect(game.currentRound).to.be.an.instanceof(Round);

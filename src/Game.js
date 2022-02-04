@@ -23,6 +23,8 @@ class Game {
     this.createCards()
     this.createDeck()
     this.currentRound = new Round(this.deck)
+    this.printQuestion(this.deck, this.currentRound)
+    this.printMessage(this.currentRound)
   }
   createCards() {
     prototypeQuestions.forEach(card => {
