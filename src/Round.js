@@ -5,14 +5,12 @@ class Round {
     this.deck = deck;
     this.turn = 0;
     this.turnCount = 0
-    this.correct = 0
     this.wrongGuess = [];
     this.isCorrect = true;
   }
   returnCurrentCard() {
     return this.deck.cards[this.turnCount]
   }
-
   takeTurn(playerGuess) {
     const turn = new Turn(playerGuess,     this.returnCurrentCard())
     this.turnCount++

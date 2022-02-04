@@ -19,7 +19,7 @@ describe('Round', function() {
     card1 = new Card(1, 'Can you propagate a plant without a leaf if it has a node?', ['usually, yes', 'usually, no', 'only in water'], 'usually, yes');
     card2 = new Card(2, 'How often should you water your plants?', ['everyday', 'on a schedule', 'it depends'], 'it depends');
     card3 = new Card(3, 'Houseplants should always be planted in soil', ['yes!', 'no!'], 'no!');
-    card4 = new Card(3, 'Houseplants can thrive in a low light environment', ['yes!', 'no!'], 'no!')
+    card4 = new Card(4, 'Houseplants can thrive in a low light environment', ['yes!', 'no!'], 'no!')
     deck = new Deck([card1,card2,card3])
     round = new Round(deck)
   });
@@ -85,20 +85,12 @@ describe('Round', function() {
 
     expect(round.calculatePercentCorrect()).to.equal(50)
   });
+
   it('should be able to end the round', function () {
     round.takeTurn('usually, no')
     round.takeTurn('it depends')
 
     expect(round.endRound()).to.equal(`** Round over! ** You answered 50% of the questions correctly!`)
   })
-  // Guess is evaluated/recorded. Incorrect guesses will be stored (via the id) in an array of incorrectGuesses
+
 });
-
-
-//The turns count is updated, regardless of whether the guess is correct or incorrect
-// The next card becomes current card
-// Guess is evaluated/recorded. Incorrect guesses will be stored (via the id) in an array of incorrectGuesses
-// Feedback is returned regarding whether the guess is incorrect or correct
-
-// calculatePercentCorrect: method that calculates and returns the percentage of correct guesses
-// endRound: method that prints the following to the console: ‘** Round over! ** You answered <>% of the questions correctly!’

@@ -20,7 +20,7 @@ describe('Game', function() {
     card1 = new Card(1, 'Can you propagate a plant without a leaf if it has a node?', ['usually, yes', 'usually, no', 'only in water'], 'usually, yes');
     card2 = new Card(2, 'How often should you water your plants?', ['everyday', 'on a schedule', 'it depends'], 'it depends');
     card3 = new Card(3, 'Houseplants should always be planted in soil', ['yes!', 'no!'], 'no!');
-    card4 = new Card(3, 'Houseplants can thrive in a low light environment', ['yes!', 'no!'], 'no!')
+    card4 = new Card(4, 'Houseplants can thrive in a low light environment', ['yes!', 'no!'], 'no!')
     deck = new Deck([card1,card2,card3])
     round = new Round(deck)
     game = new Game(deck)
@@ -52,7 +52,3 @@ describe('Game', function() {
     expect(game.currentRound).to.be.an.instanceof(Round);
   });
 });
-
-
-// invokes printMessage to display the message in the CLI
-// invokes printQuestion to kick off our helper functions that allow interaction via the CLI
