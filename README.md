@@ -9,13 +9,14 @@ ___
 ## Overview
 Play a game in your terminal. The game is multiple choice. After you have completed all the questions you will receive a percentage of correct answers.
 
-## [Repository](git@github.com:KATIETOLER/flashcards.git)
-
-`clone` the repository linked above. `cd` into the repository.
-
 ## How to Play the Game
+#### [Repository](git@github.com:KATIETOLER/flashcards.git)
 
-run this command in your terminal:
+`clone` the repository linked above.
+
+`cd` into the repository.
+
+Run this command in your terminal:
 
 ```bash
 node index.js
@@ -39,7 +40,7 @@ When the game is functioning appropriately, you will be prompted for each questi
 
 ![Completed game example](https://media3.giphy.com/media/0DGTFDOKC8G1KwdigN/giphy.gif)
 
-### Write Your Own FlashCards
+### [Write Your Own FlashCards](https://frontend.turing.edu/projects/flash-cards.html)
  Visit [this site](https://github.com/turingschool-examples/flashcards-starter).
 
  On the top right corner of the page, click the **Fork** button.
